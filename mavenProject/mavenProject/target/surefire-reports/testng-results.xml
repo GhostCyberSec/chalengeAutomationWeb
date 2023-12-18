@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-12-18T21:50:09 WET" name="eCommerceTest" finished-at="2023-12-18T21:50:35 WET" duration-ms="26673">
+    <groups>
+    </groups>
+    <test started-at="2023-12-18T21:50:09 WET" name="Command line test" finished-at="2023-12-18T21:50:35 WET" duration-ms="26673">
+      <class name="eCommerceTest">
+        <test-method is-config="true" signature="inicializa()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:09 WET" name="inicializa" finished-at="2023-12-18T21:50:13 WET" duration-ms="3905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method signature="addItemIntoCart()[pri:1, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:13 WET" name="addItemIntoCart" finished-at="2023-12-18T21:50:13 WET" duration-ms="870" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemIntoCart -->
+        <test-method is-config="true" signature="finaliza()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:13 WET" name="finaliza" finished-at="2023-12-18T21:50:14 WET" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finaliza -->
+        <test-method is-config="true" signature="inicializa()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:14 WET" name="inicializa" finished-at="2023-12-18T21:50:17 WET" duration-ms="3023" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method signature="updateQuantitytemIntoCart()[pri:2, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:17 WET" name="updateQuantitytemIntoCart" finished-at="2023-12-18T21:50:18 WET" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateQuantitytemIntoCart -->
+        <test-method is-config="true" signature="finaliza()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:18 WET" name="finaliza" finished-at="2023-12-18T21:50:19 WET" duration-ms="836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finaliza -->
+        <test-method is-config="true" signature="inicializa()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:19 WET" name="inicializa" finished-at="2023-12-18T21:50:22 WET" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method signature="removeItemFromCart()[pri:3, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:22 WET" name="removeItemFromCart" finished-at="2023-12-18T21:50:24 WET" duration-ms="1511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromCart -->
+        <test-method is-config="true" signature="finaliza()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:24 WET" name="finaliza" finished-at="2023-12-18T21:50:24 WET" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finaliza -->
+        <test-method is-config="true" signature="inicializa()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:24 WET" name="inicializa" finished-at="2023-12-18T21:50:28 WET" duration-ms="3170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method signature="jumpToItemDetails()[pri:4, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:28 WET" name="jumpToItemDetails" finished-at="2023-12-18T21:50:29 WET" duration-ms="1281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jumpToItemDetails -->
+        <test-method is-config="true" signature="finaliza()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:29 WET" name="finaliza" finished-at="2023-12-18T21:50:30 WET" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finaliza -->
+        <test-method is-config="true" signature="inicializa()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:30 WET" name="inicializa" finished-at="2023-12-18T21:50:33 WET" duration-ms="2994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- inicializa -->
+        <test-method signature="startCheckOutProcess()[pri:5, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:33 WET" name="startCheckOutProcess" finished-at="2023-12-18T21:50:34 WET" duration-ms="1841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startCheckOutProcess -->
+        <test-method is-config="true" signature="finaliza()[pri:0, instance:eCommerceTest@4f51b3e0]" started-at="2023-12-18T21:50:34 WET" name="finaliza" finished-at="2023-12-18T21:50:35 WET" duration-ms="845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finaliza -->
+      </class> <!-- eCommerceTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- eCommerceTest -->
+</testng-results>
