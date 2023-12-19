@@ -5,12 +5,17 @@ This project is a chalenge frontEnd automation of a e-commerce using Selenium fr
 ## Table of Contents
 
 - [Overview](#overview)
+- [Target](#target)
 - [Features](#features)
 - [Installation](#installation)
 
 ## Overview
 
 In this project we have 5 tests to simulate some flows that costumer will do when he/she enter on e-commerce and wants to buy some product.
+
+## Target
+e-commerce Swag Labs
+URL: https://www.saucedemo.com/
 
 ## Features
 List of the Tests:
