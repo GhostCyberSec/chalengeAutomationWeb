@@ -7,10 +7,6 @@ This project is a chalenge frontEnd automation of a e-commerce using Selenium fr
 - [Overview](#overview)
 - [Features](#features)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
