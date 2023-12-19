@@ -19,6 +19,8 @@ public class MainPage {
 
 	//Dynamic Elements:
 	public String itemDescription = "//div[@class='inventory_list']/div[*option*]/div[@class='inventory_item_description']/div[@class='inventory_item_label']/a/div";
+
+	public String itemDetailsTitle = "//div[@class='inventory_details_name large_size']";
 	public String product = "//div[@class='inventory_list']/div[*option*]/div[@class='inventory_item_description']/div[@class='pricebar']/button";
 
 
@@ -27,6 +29,10 @@ public class MainPage {
 	public int randomNumberGenerator(int range) {
 		Random random = new Random();
 		return random.nextInt(range) + 1;
+	}
+
+	public String getItemDetailsTitle() {
+		return dsl.createWebElement(itemDetailsTitle).getText().toString();
 	}
 
 	/**

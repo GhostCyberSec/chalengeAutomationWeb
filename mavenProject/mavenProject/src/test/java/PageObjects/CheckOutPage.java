@@ -1,11 +1,15 @@
 package PageObjects;
 
+import Utils.ConfigReader;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import java.util.Random;
 
 public class CheckOutPage {
+	ConfigReader configReader;
+
 
 	private DSL dsl;
 
@@ -23,6 +27,8 @@ public class CheckOutPage {
 	public String cartItemList = "//div[@class='cart_item']";
 	public String checkOutCompleteMsg = "//h2[contains(text(), 'Thank you for your order!')]";
 
+	public String requiredMsg= "//h3[@data-test='error']";
+
 	//BUTTONS
 	public String continueBtn = "//input[@id='continue']";
 	public String finishButton = "//button[@id='finish']";
@@ -34,14 +40,40 @@ public class CheckOutPage {
 
 
 	public void fillFirstNameField() {
-		dsl.write(By.xpath(firstNameInputField), "John");
+		configReader = new ConfigReader();
+		dsl.write(By.xpath(firstNameInputField), configReader.getUserInformationFirstName());
 	}
 
 	public void fillLastNameField() {
-		dsl.write(By.xpath(lastNameInputField), "Smith");
+		configReader = new ConfigReader();
+		dsl.write(By.xpath(lastNameInputField), configReader.getUserInformationLastName());
 	}
 	public void fillZipPostalCode() {
-		dsl.write(By.xpath(zipPostalCodeInputField), "123456789");
+		configReader = new ConfigReader();
+		dsl.write(By.xpath(zipPostalCodeInputField), configReader.getUserInformationZipPostalCode());
+	}
+
+	/**
+	 * Validate the message error when the fields are not filled on "Checkout: Your information" screen
+	 * @return if all the messages is right return true. Else return false.
+	 */
+	public boolean validateYourInformationField() {
+		Boolean allFieldsValidated;
+		try {
+			clickContinueButton();
+			Assert.assertTrue(dsl.createWebElement(requiredMsg).getText().equalsIgnoreCase("Error: First Name is required"));
+			fillFirstNameField();
+			clickContinueButton();
+			Assert.assertTrue(dsl.createWebElement(requiredMsg).getText().equalsIgnoreCase("Error: Last Name is required"));
+			fillFirstNameField();
+			fillLastNameField();
+			clickContinueButton();
+			Assert.assertTrue(dsl.createWebElement(requiredMsg).getText().equalsIgnoreCase("Error: Postal Code is required"));
+			allFieldsValidated = true;
+		} catch (Exception e) {
+			allFieldsValidated = false;
+		}
+		return allFieldsValidated;
 	}
 
 	public void clickContinueButton() {

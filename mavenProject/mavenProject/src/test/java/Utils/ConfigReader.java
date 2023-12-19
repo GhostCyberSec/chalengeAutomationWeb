@@ -37,6 +37,17 @@ public class ConfigReader {
         return properties.getProperty("username");
     }
 
+    public String getUserInformationFirstName() {
+        return properties.getProperty("firstName");
+    }
+
+    public String getUserInformationLastName() {
+        return properties.getProperty("lastName");
+    }
+
+    public String getUserInformationZipPostalCode() {
+        return properties.getProperty("zipPostalCode");
+    }
     public String getPassWord() {
         return properties.getProperty("password");
     }
